@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.carrusel {
+  margin-bottom: 10px;
+}
+
+.tshirt-desc {
+  font-size: 12px;
+}
+
+.modales .btn-wish {
+  color: #3B86D1; 
+  margin-top: 10px;
+}
+
+.modales .tab-content .cont-descr p{
+  font-size: 15px; 
+  line-height: 1.5; 
+  padding-bottom: 25px; 
+  margin: 10px 20px;
+}
+
+.modales .panel-mg {
+  margin: 10px 20px;
+}
