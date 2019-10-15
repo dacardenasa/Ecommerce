@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Boostrap 3.0</title>
+</head>
+<body>
+
+  <!-- Aqui va el header -->
+  <header>
+
+    <!-- Barra menu responsiva -->
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm" aria-expanded="false">
+                <span class="sr-only">Desplegar / Ocultar Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">E-commerce</a>
+            </div>
+        
+             <!-- Inicia menu -->
+            <div class="collapse navbar-collapse navbar-right" id="navegacion-fm">
+              <ul class="nav navbar-nav" style="color: white;">
+                <li class="active"><a href="#" type="button" class="btn"><span class="glyphicon glyphicon-shopping-cart"></span> Canasta</a></li>
+                <li class="active"><a href="#" type="button" class="btn">Salir</a></li>
+             </ul>
+            </div>
+          </div>
+      </nav>
+
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- input busqueda -->
+      <div class="col-md-4">
+       <form action="" class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" aria-label="...">
+            <div class="input-group-btn">
+                <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>  
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+        </form>
+        <!-- cierre input busqueda -->
+
+        <div class="row">
+          <!-- Categorias -->
+          <div class="hidden-xs hidden-sm col-md-12">
+              <h4><strong>Categorias</strong></h4>
+              <ul class="list-group">
+                  <li class="list-group-item active"><span class="badge">100</span>Todos</li>
+                  <li class="list-group-item"><span class="badge">4</span>Hombre</li>
+                  <li class="list-group-item"><span class="badge">12</span>Mujer</li>
+                  <li class="list-group-item"><span class="badge">24</span>Hipster</li>
+                  <li class="list-group-item"><span class="badge">8</span>Metal</li>
+                  <li class="list-group-item"><span class="badge">5</span>Universidad</li>
+                  <li class="list-group-item"><span class="badge">8</span>Deportiva</li>
+                  <li class="list-group-item"><span class="badge">20</span>Rayas</li>
+                  <li class="list-group-item"><span class="badge">19</span>Apretada</li>
+                </ul>
+          </div>
+        </div> <!-- Cierre categorias -->
+      </div><!-- Cierre col-lg-6 -->
+
+      <!-- Carousel container -->
+
+      <div class="col-md-8"> 
+        <div class="row">
+          <div class="col" style="margin-bottom: 10px;">
+          <div id="my-pics" class="carousel slide" data-ride="carousel">
+          
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+              <li data-target="#my-pics" data-slide-to="0" class="active"></li>
+              <li data-target="#my-pics" data-slide-to="1"></li>
+              <li data-target="#my-pics" data-slide-to="2"></li>
+              </ol>
+      
+              <!-- Content -->
+              <div class="carousel-inner" role="listbox">
+              
+              <!-- Slide 1 -->
+              <div class="item active">
+              <img src="./img/banner-slider-1.jpg" alt="Artists">
+              </div>
+      
+              <!-- Slide 2 -->
+              <div class="item">
+              <img src="./img/banner-slider-2.jpg" alt="Adipisicin">
+              </div>
+      
+              <!-- Slide 3 -->
+              <div class="item">
+              <img src="./img/banner-slider-3.jpg" alt="summer">
+              </div>
+            </div><!-- carousel slide cierre -->
+          
+            <!-- Previous/Next controls -->
+            <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Camisetas -->
+          <!-- Primera camisa -->
+          <div class="col-xs-6 col-md-4">
+              <div class="thumbnail">
+                <img src="./img/camiseta-1.jpg" alt="camiseta1">
+                <div class="caption">
+                  <h4>Hipster Ultimate</h4>
+                  <p style="font-size: 12px;">La camisa ideal para hipsters.</p>
+                  <p>
+                    <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"></span></a> 
+                    <a href="#" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Detalles</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Segunda camisa -->
+            <div class="col-xs-6 col-md-4">
+              <div class="thumbnail">
+                <img src="./img/camiseta-2.jpg" alt="camiseta2">
+                <div class="caption">
+                  <h4>On Motion Live</h4>
+                  <p style="font-size: 12px;">Perfecta pasa salidas rocosas.</p>
+                  <p>
+                    <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"></span></a> 
+                    <a href="#" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Detalles</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Tercera camisa -->
+            <div class="col-xs-6 col-md-4">
+              <div class="thumbnail">
+                <img src="./img/camiseta-3.jpg" alt="camiseta3">
+                <div class="caption">
+                  <h4>Underground Max</h4>
+                  <p style="font-size: 12px;">Para los amantes del underground.</p>
+                  <p>
+                    <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"></span></a> 
+                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal3">Detalles</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Cuarta camisa -->
+            <div class="col-xs-6 col-md-4">
+              <div class="thumbnail">
+                <img src="./img/camiseta-4.jpg" alt="camiseta4">
+                <div class="caption">
+                  <h4>Santo Domingo Tigers</h4>
+                  <p style="font-size: 12px;">En honor a este gran equipo.</p>
+                  <p>
+                    <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"></span></a> 
+                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal4">Detalles</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Quinta camisa -->
+            <div class="col-xs-6 col-md-4">
+              <div class="thumbnail">
+                <img src="./img/camiseta-5.jpg" alt="camiseta5">
+                <div class="caption">
+                  <h4>Una camiseta más</h4>
+                  <p style="font-size: 12px;">Nunca sobra una asi cool..</p>
+                  <p>
+                    <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"></span></a> 
+                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal5">Detalles</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <!-- Cierre camisetas -->
+
+          <!-- Ventanas modales  camisetas -->
+
+          <div class="container">
+
+              <!-- Modal First T-Shirt-->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title" style="font-weight: bold;">Hipster Ultimate</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!</div>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <img src="./img/camiseta-1.jpg" alt="camisa1" style="width: 250px;">
+                          </div>
+                          <div class="col-xs-6">
+                            <h5>Precio: <strong>$229</strong></h5>
+                            <p>Calificacion: 
+                              <span class="glyphicon glyphicon-star"></span>
+                              <span class="glyphicon glyphicon-star"></span>
+                              <span class="glyphicon glyphicon-star"></span>
+                              <span class="glyphicon glyphicon-star-empty"></span>
+                              <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                            <span class="label label-warning">Hipster</span>
+                            <span class="label label-default">Deportiva</span>
+                            <p style="color: #3B86D1; margin-top: 10px;"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <!-- nav-tabs component -->
+                      <div id="exTab1">	
+                        <ul class="nav nav-tabs">
+                          <li class="active">
+                            <a href="#1a" data-toggle="tab">Descripción</a>
+                          </li>
+                          <li>
+                            <a href="#2a" data-toggle="tab">Comentarios</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content clearfix">
+                          <div class="tab-pane active" id="1a" style="margin: 10px 20px;">
+                            <p style="font-size: 15px; line-height: 1.5; padding-bottom: 25px;">Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatur sunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut id dolore.</p>
+                          </div>
+                          <div class="tab-pane fade" id="2a">
+                            <!-- Panel component -->
+                            <div class="panel panel-default" style="margin: 10px 20px;">
+                              <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                              <div class="panel-body">
+                                Esta camiseta esta increible,la quiero!
+                              </div>
+                            </div>
+                            <form action="" class="form-group">
+                              <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario" style="width: 556px; margin-left: 22px; resize: none;"></textarea>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">comprar</button>
+                    </div>
+                  </div> <!-- cierre modal-content -->
+                </div> <!-- cierre modal-dialog -->
+              </div> <!-- cierre modal component  -->
+        
+              <!-- Modal second T-Shirt-->
+              <div class="modal fade" id="myModal2" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+        
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="font-weight: bold;">On Motion Live</h4>
+                      </div>
+        
+                      <div class="modal-body">
+                        <div class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!</div>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <img src="./img/camiseta-2.jpg" alt="camisa2" style="width: 250px;">
+                            </div>
+                            <div class="col-xs-6">
+                              <h5>Precio: <strong>$229</strong></h5>
+                              <p>Calificacion: 
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                              </p>
+                              <span class="label label-warning">Hipster</span>
+                              <span class="label label-default">Deportiva</span>
+                              <p style="color: #3B86D1; margin-top: 10px;"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- nav-tabs component -->
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descripcion" role="tab" aria-controls="home"
+                                aria-selected="true">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="profile"
+                                aria-selected="false">Comentarios</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="descripcion" role="tabpanel" aria-labelledby="home-tab">
+                                <p style="font-size: 15px; line-height: 1.5; padding-bottom: 25px; margin: 10px 20px;">Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatur sunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut id dolore.</p>
+                              </div>
+                            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="profile-tab">
+                              <!-- Panel component -->
+                              <div class="panel panel-default" style="margin: 10px 20px;">
+                                <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                                <div class="panel-body">
+                                  Esta camiseta esta increible,la quiero!
+                                </div>
+                              </div>
+                              <form action="" class="form-group">
+                                <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario" style="width: 556px; margin-left: 22px; resize: none;"></textarea>
+                              </form>              
+                            </div>
+                        </div>
+        
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">comprar</button>
+                      </div>
+                    </div> <!-- cierre modal-content -->
+                  </div> <!-- cierre modal-dialog -->
+                </div> <!-- cierre modal component -->
+        
+              <!-- Modal third T-Shirt-->
+              <div class="modal fade" id="myModal3" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+        
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="font-weight: bold;">Underground Max</h4>
+                      </div>
+        
+                      <div class="modal-body">
+                        <div class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!</div>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <img src="./img/camiseta-3.jpg" alt="camisa3" style="width: 250px;">
+                            </div>
+                            <div class="col-xs-6">
+                              <h5>Precio: <strong>$229</strong></h5>
+                              <p>Calificacion: 
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                              <span class="label label-warning">Underground</span>
+                              <span class="label label-default">Deportiva</span>
+                              <p style="color: #3B86D1; margin-top: 10px;"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- nav-tabs component -->
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descripcion2" role="tab" aria-controls="home"
+                                aria-selected="true">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#comentarios2" role="tab" aria-controls="profile"
+                                aria-selected="false">Comentarios</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="descripcion2" role="tabpanel" aria-labelledby="home-tab">
+                                <p style="font-size: 15px; line-height: 1.5; padding-bottom: 25px; margin: 10px 20px;">Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatur sunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut id dolore.</p>
+                              </div>
+                            <div class="tab-pane fade" id="comentarios2" role="tabpanel" aria-labelledby="profile-tab">
+                              <!-- Panel component -->
+                              <div class="panel panel-default" style="margin: 10px 20px;">
+                                <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                                <div class="panel-body">
+                                  Esta camiseta esta increible,la quiero!
+                                </div>
+                              </div>
+                              <form action="" class="form-group">
+                                <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario" style="width: 556px; margin-left: 22px; resize: none;"></textarea>
+                              </form>              
+                            </div>
+                        </div>
+        
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">comprar</button>
+                      </div>
+                    </div> <!-- cierre modal-content -->
+                  </div> <!-- cierre modal-dialog -->
+                </div> <!-- cierre modal component -->
+        
+              <!-- Modal fourth T-Shirt-->
+              <div class="modal fade" id="myModal4" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+        
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="font-weight: bold;">Santo Domingo Tigers</h4>
+                      </div>
+        
+                      <div class="modal-body">
+                        <div class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!</div>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <img src="./img/camiseta-4.jpg" alt="camisa4" style="width: 250px;">
+                            </div>
+                            <div class="col-xs-6">
+                              <h5>Precio: <strong>$229</strong></h5>
+                              <p>Calificacion: 
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                              <span class="label label-warning">Underground</span>
+                              <span class="label label-default">Deportiva</span>
+                              <p style="color: #3B86D1; margin-top: 10px;"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- nav-tabs component -->
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descripcion3" role="tab" aria-controls="home"
+                                aria-selected="true">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#comentarios3" role="tab" aria-controls="profile"
+                                aria-selected="false">Comentarios</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="descripcion3" role="tabpanel" aria-labelledby="home-tab">
+                                <p style="font-size: 15px; line-height: 1.5; padding-bottom: 25px; margin: 10px 20px;">Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatur sunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut id dolore.</p>
+                              </div>
+                            <div class="tab-pane fade" id="comentarios3" role="tabpanel" aria-labelledby="profile-tab">
+                              <!-- Panel component -->
+                              <div class="panel panel-default" style="margin: 10px 20px;">
+                                <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                                <div class="panel-body">
+                                  Esta camiseta esta increible,la quiero!
+                                </div>
+                              </div>
+                              <form action="" class="form-group">
+                                <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario" style="width: 556px; margin-left: 22px; resize: none;"></textarea>
+                              </form>              
+                            </div>
+                        </div>
+        
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+              <!-- Modal fifth T-Shirt-->
+              <div class="modal fade" id="myModal5" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+        
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="font-weight: bold;">Una camiseta más</h4>
+                      </div>
+        
+                      <div class="modal-body">
+                        <div class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!</div>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <img src="./img/camiseta-5.jpg" alt="camisa5" style="width: 250px;">
+                            </div>
+                            <div class="col-xs-6">
+                              <h5>Precio: <strong>$229</strong></h5>
+                              <p>Calificacion: 
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                              <span class="label label-warning">Underground</span>
+                              <span class="label label-default">Deportiva</span>
+                              <p style="color: #3B86D1; margin-top: 10px;"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- nav-tabs component -->
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descripcion4" role="tab" aria-controls="home"
+                                aria-selected="true">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#comentarios4" role="tab" aria-controls="profile"
+                                aria-selected="false">Comentarios</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="descripcion4" role="tabpanel" aria-labelledby="home-tab">
+                                <p style="font-size: 15px; line-height: 1.5; padding-bottom: 25px; margin: 10px 20px;">Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatur sunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut id dolore.</p>
+                              </div>
+                            <div class="tab-pane fade" id="comentarios4" role="tabpanel" aria-labelledby="profile-tab">
+                              <!-- Panel component -->
+                              <div class="panel panel-default" style="margin: 10px 20px;">
+                                <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                                <div class="panel-body">
+                                  Esta camiseta esta increible,la quiero!
+                                </div>
+                              </div>
+                              <form action="" class="form-group">
+                                <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario" style="width: 556px; margin-left: 22px; resize: none;"></textarea>
+                              </form>              
+                            </div>
+                        </div>
+        
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">comprar</button>
+                      </div>
+                    </div> <!-- Cierre mosal content -->
+                  </div> <!-- cierre modal-dialog -->
+                </div> <!-- cierre  modal component -->
+        
+          </div> 
+
+          <!-- cierre ventanas modales -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></body>
+</html>
