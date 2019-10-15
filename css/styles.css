@@ -25,3 +25,7 @@
 .modales .panel-mg {
   margin: 10px 20px;
 }
+
+.modales .modal-title {
+  font-weight: bold;
+}
