@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <!-- Modal First t-shirt-->
+         <div id="myModal" class="modal fade" role="dialog">
+             <div class="modal-dialog">
+
+               <!-- Modal content-->
+               <div class="modal-content">
+
+                 <div class="row">
+                   <div class="col-xs-12">
+                     <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       <h4 class="modal-title">Hipster Ultimate</h4>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Modal body -->
+                 <div class="row">
+                   <div class="modal-body">
+
+                     <!-- Componente alert item-->
+                     <div class="row">
+                       <div class="col-xs-12">
+                         <div class="alert alert-info tshirt-alert">                             <!-- clase tshirt-alert-->
+                           <span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado!
+                         </div>
+                       </div>
+                     </div>
+
+                     <!--  Imagen camiseta-->
+                     <div class="col-xs-6">
+                       <div>
+                         <img src="./img/camiseta-1.jpg" alt="camisa" class="img-responsive">
+                       </div>
+                     </div>
+
+                     <!-- Descripcion item -->
+                     <div class="col-xs-6">
+                       <div class="item-desc">
+
+                         <h5>Precio: <strong>$229</strong></h5>
+                         <p>Calificacion:
+                           <span class="glyphicon glyphicon-star"></span>
+                           <span class="glyphicon glyphicon-star"></span>
+                           <span class="glyphicon glyphicon-star"></span>
+                           <span class="glyphicon glyphicon-star-empty"></span>
+                           <span class="glyphicon glyphicon-star-empty"></span>
+                         </p>
+                         <span class="label label-warning">Hipster</span>
+                         <span class="label label-default">Deportiva</span>
+                         <div class="btn-wish">                                             <!-- borrar el estilo inline -->
+                           <a href="#"><span class="glyphicon glyphicon-heart"></span>Agregar a los deseos</a>
+                         </div>
+
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Pestañas navegacion item -->
+                 <div class="row tshirt-nav">                                                    <!-- class tshirt-nav -->
+                   <div class="col-xs-12">
+
+                     <!-- nav-tabs component -->
+                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                       <li class="nav-item active">
+                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descripcion" role="tab" aria-controls="home"
+                           aria-selected="true">Descripción</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="profile"
+                           aria-selected="false">Comentarios</a>
+                       </li>
+                     </ul>
+
+                     <!-- Parrafo descripcion item -->
+                     <div class="tab-content" id="myTabContent">
+                       <div class="tab-pane active cont-descr" id="descripcion" role="tabpanel" aria-labelledby="home-tab">
+                           <p class="tshirt-modal-descr">                                      <!-- class tshirt-modal-descr -->
+                             Sint magna aliquip in nulla non cupidatat proident aliquip consequat. Magna consequat anianim officia pariatursunt labore consectetur cillum est magna laboris voluptate velitVoluptate adipisicing velit non pariatur ut iddolore.
+                           </p>
+                       </div>
+                       <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="profile-tab">
+
+                         <!-- Comentarios item -->
+                         <div class="panel panel-default panel-mg tshirt-panel">                 <!-- clase tshirt-panel  -->
+                           <div class="panel-heading">Germán Escobar comento hace 2 días</div>
+                           <div class="panel-body">
+                             Esta camiseta esta increible,la quiero!
+                           </div>
+                         </div>
+
+                         <!-- Postear comentarios item -->
+                         <div class="form-comment">
+                           <form action="" class="form-group tshirt-form">                       <!-- clase  tshirt-form-->
+                             <textarea name="comentario" class="form-control" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                           </form>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- T-shirt Modal Window Footer -->
+                 <div class="row">
+                   <div class="col-xs-12">
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     </div>
+                   </div>
+                 </div>
+
+               </div> <!-- Cierre modal-content -->
+             </div> <!-- Cierre modal-dialog -->
+         </div> <!-- Cierre modal -->
+
+  </body>
+</html>
