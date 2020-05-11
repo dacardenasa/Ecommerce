@@ -67,4 +67,27 @@ textarea {
   margin: 0 10px 0 10px;
 }
 
+@media (max-width: 992px) {
+
+  .card {
+    min-height: 410px;
+  }
+
+  .card-body h5.on {
+    padding-top: 23px;
+  }
+
+  .card-body h5 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .card-body h5.on {
+    padding-top: 0;
+  }
+
+}
+
 
